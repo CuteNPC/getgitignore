@@ -1,3 +1,3 @@
 mkdir -p ~/mybin
-cp ./getgitignore.py ~/mybin/getgitignore
+cp ./getgitignore.sh ~/mybin/getgitignore
 chmod +x ~/mybin/getgitignore
