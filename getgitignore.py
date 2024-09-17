@@ -14,9 +14,10 @@ def main():
     language = sys.argv[1]
     response = requests.get(url + language)
     if response.status_code == 200:
-        print(response.text)
+        # print(response.text)
         with open(".gitignore", 'a') as file:
             file.write(response.text + '\n')
+        print('.gitignore file for', language, 'fetched successfully')
     else:
         print('Error: Could not fetch .gitignore file for', language)
 
